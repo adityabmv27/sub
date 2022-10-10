@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Pacifico', cursive;
+}
+
+.background{
+    background-color: #12181B;
+    height: 100vh;
+    padding-top: 1px;
+}
+.title{
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    margin-top: 10%;
+}
+
+.display{
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.hide{
+    display: none;
+}
+
+.container{
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 33% 33% 33%;
+    max-width: 300px;
+}
+
+.tile{
+    border: 1px solid white;
+    min-width: 100px;
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    cursor: pointer;
+}
+.tile:hover{
+    border: 1px solid #09C372;
+    box-shadow: 2px 2px 10px #09C372;
+}
+.tile1{
+    border-radius: 25px 0px 0px 0px;
+}
+.tile2{
+    border-radius: 0px 25px 0px 0px;
+}
+.tile3{
+    border-radius: 0px 0px 0px 25px;
+}
+.tile4{
+    border-radius: 0px 0px 25px 0px;
+}
+
+
+.playerX{
+    color: #09C372;
+}
+.playerO{
+    color: #498AFB;
+}
+
+.controls{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1em;
+}
+
+#reset {
+    background-color: #ffd138;
+    color: white;
+    padding: 10px;
+    margin: 8px;
+    border-radius: 8px;
+    cursor: pointer;
+    border: none;
+    font-size: 20px;
+    margin-left: 1em;
+}
+
+#player_name{
+    display: none;
+}
+
+#submitdata{
+    display: none;
+}
+
+#player_1{
+    font-size: 25px;
+    width: 300px;
+    height: 50px;
+    border: 2px solid #46545b;
+    background: #12181B;
+    border-radius: 20px;
+    padding-left: 10px;
+    color: #498AFB;
+    outline-color: #498AFB;
+    margin-bottom: 20px;
+}
+#player_2{
+    font-size: 25px;
+    width: 300px;
+    height: 50px;
+    border: 2px solid #46545b;
+    background: #12181B;
+    border-radius: 20px;
+    padding-left: 10px;
+    color: #09C372;
+    outline-color: #09C372;
+    margin-bottom: 20px;
+}
+
+.inputfields{
+    display: flex;
+    flex-direction: column;
+}
+
+#endgame{
+    background-color: #ff3838;
+    color: white;
+    padding: 10px;
+    margin: 8px;
+    border-radius: 8px;
+    cursor: pointer;
+    border: none;
+    font-size: 20px;
+    margin-left: 1em;
+}

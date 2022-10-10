@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    
+    <title>Tic Tac Toe</title>
+</head>
+<body>
+    <main class="background">
+        <section class="title">
+            <h1>
+                Tic-Tac-Toe
+            </h1>
+        </section>
+        <section class="display">
+            Player <span class="display-player playerO">O</span>'s turn
+        </section>
+        <section class="container">
+            <div class="tile tile1"></div>
+            <div class="tile"></div>
+            <div class="tile tile2"></div>
+            <div class="tile"></div>
+            <div class="tile "></div>
+            <div class="tile"></div>
+            <div class="tile tile3"></div>
+            <div class="tile"></div>
+            <div class="tile tile4"></div>
+            
+        </section>
+        
+        <section class="display announcer hide"></section>
+        <section class="controls">
+            
+            <form action="#" method="post" class="inputfields">
+                <input type="text" placeholder="Player O" name="O" id="player_1">
+                <input type="text" placeholder="Player X" name="X" id="player_2">
+                <input type="text" name="winner" id="player_name">
+                <button type="submit" id="reset">Reset</button>
+            </form>
+            <form action="/results" method="get">
+                <button id="endgame" type="submit">End Game</button>
+            </form>
+            
+            
+        </section>
+        
+    </main>
+    <script src="{{ url_for('static', filename='index.js') }}"></script>
+</body>
+</html>
